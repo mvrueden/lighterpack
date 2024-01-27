@@ -7,8 +7,8 @@ import helmet from "helmet"
 import fs from "node:fs"
 import {usersRouter} from "./endpoints/users.routes"
 import {connectToDatabase} from "./endpoints/database.service"
-import {CsvService} from "./csv.service"
-import {Category, Item, Library, List} from "./model";
+import {CsvService} from "../shared/csv.service"
+import {Category, Item, Library, List} from "../shared/model";
 
 dotenv.config()
 
